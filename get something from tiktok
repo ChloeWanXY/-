@@ -11,3 +11,10 @@ res = requests.get(url)
 # 打开一个空的视频(真·狗粮.mp4) 把得到res.content丢进去 得到一个可以播放的视频
 open('美女1.mp4', 'wb').write(res.content)
 
+****
+url=''##find 全部而不是media ，refresh page 然后调取所有用户的名字，用户列表的链接
+weizhuang={}##伪装自己，相当于给自己办了个假证
+weizhuang={'user-agent':‘Mozilla/5.0（windows。。。）’,'cookie':''}##浏览器的信息，登录的信息？
+res=requests.get(url,headers=weizhuang)#请求网站得到响应
+
+
