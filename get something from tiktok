@@ -11,10 +11,38 @@ res = requests.get(url)
 # 打开一个空的视频(真·狗粮.mp4) 把得到res.content丢进去 得到一个可以播放的视频
 open('美女1.mp4', 'wb').write(res.content)
 
-****
-url=''##find 全部而不是media ，refresh page 然后调取所有用户的名字，用户列表的链接
+**********
+url=''##find 全部而不是media ，refresh page 然后调取所有用户的名字，用户列表的链接#搜索，网址 cookiue 响应 预览 小三角是收纳盒，那个最大的三角旁边就是代吗里头的js
+js是date里面这个data x=js【'data'】['has_more']
 weizhuang={}##伪装自己，相当于给自己办了个假证
 weizhuang={'user-agent':‘Mozilla/5.0（windows。。。）’,'cookie':''}##浏览器的信息，登录的信息？
 res=requests.get(url,headers=weizhuang)#请求网站得到响应
+print(res.text) #wenben!
+
+<html>文本数据
+{[]}json数据
+#先打印一下 看一下
+#print（res.text）#文本
+#如果发现是json数据
+js=res.json() #转化为json数据！
+x=js['data']['has_more']
+print(x)#查看hasmore在不在js里面
+#如果发现text数据
+txt=res.text#如果发现是text数据
+有些可能会把json隐藏在text里面
+name=['','',] list
+for (na) in name:
+  print(na)#遍历
+  res=requests.get(用户主页，headers='伪装')？？？ 这个啥意思
+  print（支付登记，用户主页）
+  text=res.text#文本数据
+  re.findall('<title data-react-helmet='true'>')???这个又是在哪里
+抖音号 = re.findall('',text)
+
+
+
+
+
+
 
 
