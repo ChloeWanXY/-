@@ -1,3 +1,7 @@
 user-agent
 cookie
 网站会检查以上两个 ，你用什么浏览器，你是不是我的登录用户
+SELECT column
+FROM table
+DISTINCT means delect repetitive things 
+SELECT a AS b #rename 
