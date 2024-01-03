@@ -1,7 +1,27 @@
 user-agent
 cookie
 网站会检查以上两个 ，你用什么浏览器，你是不是我的登录用户
+*****query and sorted
 SELECT column
 FROM table
 DISTINCT means delect repetitive things 
 SELECT a AS b #rename 
+how to save the query above: add a VIEW at beginning
+CREATE VIEW aaa as
+SELECT * = SELECT all
+{SELECT
+FROM
+WHERE color='yellow'
+ORDER BY length#(ASC)alphabetically
+LIMIT 3;
+}
+SELECT a,b
+ORDER BY certification, release_year DESC;#first sorted by certification second by released year
+*****grouping data
+GROUP BY comes before ORDER BY
+ALWAYS go with COUNTING() 查某个大类里头某个小类有多少
+-- Find the release_year and film_count of each year
+-- Find the release_year and film_count of each year
+SELECT release_year, COUNT(*) AS film_count# you cannot ???????
+FROM films
+GROUP BY release_year;
